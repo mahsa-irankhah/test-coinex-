@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>coinex</title>
+  </head>
+  <body>
+     
+    <!-- bootstrap navbar-->
+
+    <div class="bootstrap_navbar"><nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./src/images/CoinEx_logo.png" class="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Market <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fiat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Swap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Futures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Finance
+              <img
+                src="./src/images/icons/Down Arrow 1.svg"
+                class="arrow_icon"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Promotion
+              <img
+                src="./src/images/icons/Down Arrow 1.svg"
+                class="arrow_icon"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+          <li class="nav-item d-sm-none">
+            <a class="nav-link" href="#">
+              <img
+                src="./src/images/icons/Volume Up.svg"
+                class="nav_icon"
+                alt="vulume up"
+              />
+            </a>
+
+            <a class="nav-link" href="#">
+              <img
+                src="./src/images/icons/Moon.svg"
+                class="nav_icon"
+                alt="night mode"
+              />
+            </a>
+
+            <a class="nav-link" href="#">
+              <img
+                src="./src/images/icons/Download 2.svg"
+                class="nav_icon"
+                alt="download"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              English/USDT
+              <img
+                src="./src/images/icons/Down Arrow 1.svg"
+                class="arrow_icon"
+              />
+            </a>
+          </li>
+        </ul>
+      
+      </div>
+    </nav></div>
+    
+
+    <!-- my navbar -->
+
+    <div class="my_navbar "><nav class="navbar">
+      <img src="./src/images/CoinEx_logo.png" class="logo" />
+      <ul>
+        <li class="nav-item">Market</li>
+        <li class="nav-item">Fiat</li>
+        <li class="nav-item">Swap</li>
+        <li class="nav-item">Futures</li>
+        <li class="nav-item">
+          Finance
+          <img src="./src/images/icons/Down Arrow 1.svg" class="arrow_icon" />
+        </li>
+        <li class="nav-item">
+          Promotion
+          <img src="./src/images/icons/Down Arrow 1.svg" class="arrow_icon" />
+        </li>
+      </ul>
+      <div>
+        <a class="nav-item btn">Log In</a>
+        <a class="nav-item sign-up-nav text-light">Sign Up</a>
+      </div>
+      <div class="nav_icons">
+        <img
+          src="./src/images/icons/Volume Up.svg"
+          class="nav_icon"
+          alt="vulume up"
+        />
+        <img
+          src="./src/images/icons/Moon.svg"
+          class="nav_icon"
+          alt="night mode"
+        />
+        <img
+          src="./src/images/icons/Download 2.svg"
+          class="nav_icon"
+          alt="download"
+        />
+      </div>
+      <div class="currency">
+        <p class="nav-item">
+          English/USDT
+          <img src="./src/images/icons/Down Arrow 1.svg" class="arrow_icon" />
+        </p>
+      </div>
+    </nav></div>
+
+    
+
+    <main class="parent">
+
+      <!--top section-->
+
+      <section class="top_section">
+        <p class="currency_title">
+          <img src="./src/images/icons/bitcoin-(btc).svg" alt="bitcoin" />
+          BTC/USDT
+          <img src="./src/images/icons/Down Arrow 1.svg" alt="down" />
+        </p>
+
+        <p>24,596.34</p>
+
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th class="text-secondary">24H Change</th>
+              <th class="text-secondary">24H Highest</th>
+              <th class="text-secondary">24H Lowest</th>
+              <th class="text-secondary">24H Volume</th>
+              <th class="text-secondary">24H Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+0.23%</td>
+              <td>24897.14</td>
+              <td>24428.93</td>
+              <td>244.19</td>
+              <td>6.01M</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          <img src="./src/images/icons/menu-board.svg" alt="notebook" />
+          Read about Bitcoin
+        </div>
+      </section>
+
+
+      <!-- first left section -->
+
+      <section class="market_section">
+        <form>
+          <!-- <img src="./src/images/icons/search-normal.svg" alt=""> -->
+          <input type="search" placeholder="search" />
+        </form>
+        <ul>
+          <li class="active">All</li>
+          <li>Margin</li>
+          <li>AMM</li>
+          <li>NFTFI</li>
+          <li>Web3</li>
+          <li>DEFI</li>
+        </ul>
+
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col" class="text-secondary">Market</th>
+              <th scope="col" class="text-secondary">Price</th>
+              <th scope="col" class="text-secondary">24H Change</th>
+            </tr>
+          </thead>
+          <tbody id="market_table"></tbody>
+        </table>
+      </section>
+
+      <!-- second left section -->
+
+      <section class="execution_section">
+        <h2 class="exection_header">Latest Execution</h2>
+
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col" class="text-secondary">Price(USDT)</th>
+              <th scope="col" class="text-secondary">Amount(BTC)</th>
+              <th scope="col" class="text-secondary">Time</th>
+            </tr>
+          </thead>
+          <tbody id="execution_table"></tbody>
+        </table>
+      </section>
+
+      
+
+      <!-- chart section-->
+
+      <section class="chart_section">
+        <div class="chart_links">
+          <div>
+            <a href="">Time</a>
+            <a href="">15m</a>
+            <a href="">1H</a>
+            <a href="">4H</a>
+            <a href="">1D</a>
+            <a href="">1W</a>
+            <a href="">1D</a>
+            <a href=""
+              ><img src="./src/images/icons/SlidersHorizontal.svg" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="">Original</a>
+            <a href="">TradingView</a>
+            <a href="">Depth</a>
+            <a href=""><img src="./src/images/icons/Vector.svg" alt="" /> </a>
+          </div>
+        </div>
+        <div>
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div id="tradingview_2001e"></div>
+            <div class="tradingview-widget-copyright">
+              <a
+                href="https://www.tradingview.com/symbols/NASDAQ-AAPL/"
+                rel="noopener"
+                target="_blank"
+                ><span class="blue-text">AAPL stock chart</span></a
+              >
+              by TradingView
+            </div>
+            <script
+              type="text/javascript"
+              src="https://s3.tradingview.com/tv.js"
+            ></script>
+            <script type="text/javascript">
+              new TradingView.widget({
+                "width": 610,
+                "height": 500,
+                symbol: "NASDAQ:AAPL",
+                interval: "D",
+                timezone: "Etc/UTC",
+                theme: "light",
+                style: "1",
+                locale: "en",
+                toolbar_bg: "#f1f3f6",
+                enable_publishing: false,
+                hide_top_toolbar: true,
+                hide_legend: true,
+                hide_side_toolbar: false,
+                save_image: false,
+                container_id: "tradingview_2001e",
+              });
+            </script>
+          </div>
+          <!-- TradingView Widget END -->
+        </div>
+      </section>
+
+      <!-- box under chart -->
+
+      <div class="underchart_section">
+        <a href="" class="active top_links">Spot Trading</a>
+        <a href="" class="top_links">Margin Trading x10</a>
+        <section>
+          <div class="underchart_buttons">
+            <a href="" class="styled_button active">Limit</a>
+            <a href="" class="styled_button">Market</a>
+            <a href="" class="styled_button">Stop-Limit</a>
+            <a href="" class="styled_button">Stop-Market</a>
+            <a href=""
+              ><img src="./src/images/icons/info-circle.svg" alt="info"
+            /></a>
+          </div>
+          <div class="advanced">
+            <span>Advanced:</span>
+            <a href="" class="styled_button active"
+              >AI
+              <img class="img" src="./src/images/icons/Down Arrow 1.svg" alt=""
+            /></a>
+            <a href="" class="styled_button">M</a>
+            <a href="" class="styled_button"
+              ><img src="./src/images/icons/eye.svg" alt="eye"
+            /></a>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-xs-12">
+                <div class="styled_input">
+                  <span>Price </span> <span>|</span>
+                  <input type="text" name="" id="" />
+                  <span>USDT</span>
+                </div>
+                <div class="styled_input">
+                  <span>Amount </span> <span>|</span>
+                  <input type="text" name="" id="" />
+                  <span>BTC</span>
+                </div>
+                <div>
+                  <img src="./src/images/bar1.svg" class="circle_bar" alt="" />
+                </div>
+                <div class="styled_input">
+                  <span>Value </span> <span>|</span>
+                  <input type="text" name="" id="" />
+                  <span>USDT</span>
+                </div>
+                <div class="login_links">
+                  <a href=""> <span>Log In</span> or <span>Sign Up</span></a>
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <div class="styled_input">
+                  <span>Price </span> <span>|</span>
+                  <input type="text" name="" id="" />
+                  <span>USDT</span>
+                </div>
+                <div class="styled_input">
+                  <span>Amount </span> <span>|</span>
+                  <input type="text" name="" id="" />
+                  <span>BTC</span>
+                </div>
+                <div>
+                  <img src="./src/images/bar2.svg" class="circle_bar" alt="" />
+                </div>
+                <div class="styled_input">
+                  <span>Value </span> <span>|</span>
+                  <input type="text" name="" id="" />
+                  <span>USDT</span>
+                </div>
+                <div class="login_links">
+                  <a href=""> <span>Log In</span> or <span>Sign Up</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- right  section -->
+
+      <section class="right_section">
+        <div class="main_bar">
+          <div class="down_part">25.84%</div>
+          <div class="growth_part">74.16%</div>
+        </div>
+
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col" class="text-secondary">Price(USDT)</th>
+              <th scope="col" class="text-secondary">Amount(BTC)</th>
+              <th scope="col" class="text-secondary">Total(BTC)</th>
+            </tr>
+          </thead>
+          <tbody id="change_down_table"></tbody>
+        </table>
+
+        <div class="down_bars" id="down_bars"></div>
+
+        <div class="box_right_section">
+          <div>
+            <p class="profit">24,593.64</p>
+            <p>~24,628.71 USD</p>
+          </div>
+          <div>
+            <p>Index: 24632.11</p>
+          </div>
+          <div>
+            <img src="./src/images/icons/Right Arrow 1.svg" alt="" />
+          </div>
+        </div>
+
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col" class="text-secondary">Price(USDT)</th>
+              <th scope="col" class="text-secondary">Amount(BTC)</th>
+              <th scope="col" class="text-secondary">Total(BTC)</th>
+            </tr>
+          </thead>
+          <tbody id="change_up_table"></tbody>
+        </table>
+
+        <div class="up_bars" id="up_bars"></div>
+      </section>
+    </main>
+
+    <!-- scripts -->
+
+    <script src="./src/main.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
